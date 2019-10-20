@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/Weather-Sites.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+        <title>Naomi's Site</title>
+        <meta name="description" content="Website Project for BYUI CIT230 Class">
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+        <script src="js/Time.js"></script>
+        <script src="js/Toggle-Menu-Script.js"></script>
+    </head>
+    <body onload="getTime()">
+        <header>
+            <div id="name-and-slogan">
+                <h1>Forecast Friend</h1>
+                <i>In fair or foul weather</i>
+            </div>
+            <img alt="Naomi and Patrick George" src="images/ForecastFriendsLogo.png">
+        </header>
+        <main>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="preston-5.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            <div id="weather-content">
+                <h2>Preston Idaho</h2>
+                <div class="town-options">
+                    <p>Hero w/ weather summary</p>
+                </div>
+                <div class="town-options">
+                    <p>5 day weather forecast</p>
+                </div>
+                <div class="town-options">
+                    <p>Article</p>
+                </div>
+                <div class="town-options">
+                    <p>Contact Information</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; <span id="year"></span> | Nai Shih Chen | Oregon |&nbsp;<a href="">BYUI Online Learning</a></p>
+            </div>
+            <div>
+                <p>Last Updated: <span id="fullDate"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>
