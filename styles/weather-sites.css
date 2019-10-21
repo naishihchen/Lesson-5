@@ -76,17 +76,21 @@ h1 {
 	font-weight: 700;
 }
 
+.active {
+	text-decoration: underline;
+}
+
 .responsive li {
     display: block;
     flex-direction: column;
-    }
+}
 
 .responsive {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    }
+}
 
 li a {
     text-decoration: none;
@@ -106,6 +110,7 @@ main {
 }
 
 #hero {
+    background-color: white;
     width: 100%;
     margin: 0;
 }
