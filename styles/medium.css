@@ -24,4 +24,20 @@
         display: block;
     }
     
+    #forecast {
+        display: block;
+    }
+    
+    #map-image {
+        display: flex;
+        width: 300px;
+    }
+    
+    #contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
 }
