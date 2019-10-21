@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <link href="styles/Weather-Sites.css" rel="stylesheet">
+        <link href="styles/weather-sites.css" rel="stylesheet">
         <link href="styles/medium.css" rel="stylesheet">
         <link href="styles/large.css" rel="stylesheet">
         <title>Naomi's Site</title>
         <meta name="description" content="Website Project for BYUI CIT230 Class">
         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
-        <script src="js/Time.js"></script>
-        <script src="js/Toggle-Menu-Script.js"></script>
+        <script src="js/time.js"></script>
+        <script src="js/toggle-menu-script.js"></script>
     </head>
     <body onload="getTime()">
         <header>
@@ -20,7 +20,7 @@
             </div>
             <img alt="Naomi and Patrick George" src="images/ForecastFriendsLogo.png">
         </header>
-        <main>
+        <nav>
             <ul class="nav">
                 <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
                 <li><a href="#">Home</a></li>
@@ -30,19 +30,29 @@
                 <li><a href="#">Storm Center</a></li>
                 <li><a href="#">Gallery</a></li>
             </ul>
+        </nav>
+        <main>
             <div id="weather-content">
                 <h2>Preston Idaho</h2>
-                <div class="town-options">
-                    <p>Hero w/ weather summary</p>
+                <div class="town-options" id="hero">
+                    <img src="images/clouds-houses-sky-111963.jpg", alt="town picture">
                 </div>
-                <div class="town-options">
+                <div class="town-options" id="forecast">
                     <p>5 day weather forecast</p>
                 </div>
-                <div class="town-options">
-                    <p>Article</p>
+                <div class="town-options" id="article">
+                    <img src="images/action-adult-celebration-6050.jpg" alt="picnic image" id="picnic-image">
+                    <h3>Founder Day Fiasco</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div class="town-options">
-                    <p>Contact Information</p>
+                <div class="town-options" id="contact-info">
+                    <img src="images/preston-idaho.jpg" alt="map image" id="map-image">
+                    <div id="contact-text">
+                        <strong>Forecast Friends</strong>
+                        <p>Beaverton, OR, 97003</p>
+                        <p>Phone: 999-999-9999</p>
+                        <p>che17030@byui.edu</p>
+                    </div>
                 </div>
             </div>
         </main>
